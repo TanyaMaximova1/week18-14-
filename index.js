@@ -42,3 +42,49 @@ let directors = [
         top_rated_film: 'Далласский клуб покупателей'
     },
 ];
+
+console.log(directors.length); //длина массива directors
+
+//массив из top_rated_film из массива directors
+let topFilmsList = [
+    directors[0].top_rated_film,
+    directors[1].top_rated_film,
+    directors[2].top_rated_film,
+    directors[3].top_rated_film,
+    directors[4].top_rated_film,
+    directors[5].top_rated_film,
+    directors[6].top_rated_film].join(', ');
+
+document.getElementById("topFilms").value = topFilmsList;
+console.log(topFilmsList);
+
+function directorsInformations() {
+    document.getElementById("directors_name1").value = directors[0].name;
+    document.getElementById("directors_career1").value = directors[0].career;
+    document.getElementById("link1").innerHTML = `<a href=` + directors[0].films + `>фильмография</a>`;
+
+    document.getElementById("directors_name2").value = directors[1].name;
+    document.getElementById("directors_career2").value = directors[1].career;
+    document.getElementById("link2").innerHTML = `<a href=` + directors[1].films + `>фильмография</a>`;
+
+    document.getElementById("directors_name3").value = directors[2].name;
+    document.getElementById("directors_career3").value = directors[2].career;
+    document.getElementById("link3").innerHTML = `<a href=` + directors[2].films + `>фильмография</a>`;
+
+    document.getElementById("directors_name4").value = directors[3].name;
+    document.getElementById("directors_career4").value = directors[3].career;
+    document.getElementById("link4").innerHTML = `<a href=` + directors[3].films + `>фильмография</a>`;
+
+    document.getElementById("directors_name5").value = directors[4].name;
+    document.getElementById("directors_career5").value = directors[4].career;
+    document.getElementById("link5").innerHTML = `<a href=` + directors[4].films + `>фильмография</a>`;
+
+    document.getElementById("directors_name6").value = directors[5].name;
+    document.getElementById("directors_career6").value = directors[5].career;
+    document.getElementById("link6").innerHTML = `<a href=` + directors[5].films + `>фильмография</a>`;
+
+    document.getElementById("directors_name7").value = directors[6].name;
+    document.getElementById("directors_career7").value = directors[6].career;
+    document.getElementById("link7").innerHTML = `<a href=` + directors[6].films + `>фильмография</a>`;
+}
+directorsInformations();

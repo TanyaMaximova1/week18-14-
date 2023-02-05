@@ -1,0 +1,20 @@
+.directors {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+.link {
+    border: none;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #100f0f;
+    margin: 1em 0;
+    padding: 0;
+}
