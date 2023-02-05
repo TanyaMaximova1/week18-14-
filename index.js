@@ -88,3 +88,57 @@ function directorsInformations() {
     document.getElementById("link7").innerHTML = `<a href=` + directors[6].films + `>фильмография</a>`;
 }
 directorsInformations();
+
+//задание под ***
+function intersectionOne() {
+    let new_arr1 = [];
+    for (element_a of arr1) {
+        for (element_b of arr2) {
+            if (element_b == element_a) {
+                new_arr1.push(element_a)
+            }
+        }
+    }
+    return new_arr1;
+}
+
+function intersectionTwo() {
+    let new_arr2 = [];
+    for (element_a of arr3) {
+        for (element_b of arr4) {
+            for (element_c of arr5) {
+                if (element_b == element_a && element_a == element_c) {
+                    new_arr2.push(element_a)
+                }
+            }
+        }
+    }
+    return new_arr2;
+}
+
+function intersectionThree() {
+    let new_arr2 = [];
+    for (element_a of arr6) {
+        for (element_b of arr7) {
+            for (element_c of arr8) {
+                if (element_b == element_a && element_a == element_c) {
+                    new_arr2.push(element_a)
+                }
+            }
+        }
+    }
+    return new_arr2;
+}
+
+const arr1 = [1, 2];
+const arr2 = [2, 3];
+const arr3 = ['a', 'b'];
+const arr4 = ['b', 'c'];
+const arr5 = ['b', 'e', 'c'];
+const arr6 = ['b', 'b', 'e'];
+const arr7 = ['b', 'c', 'e'];
+const arr8 = ['b', 'e', 'c'];
+
+console.log(intersectionOne(arr1, arr2)); // [2]
+console.log(intersectionTwo(arr3, arr4, arr5)); // ['b']
+console.log(intersectionThree(arr6, arr7, arr8)); // ['b', 'e']
