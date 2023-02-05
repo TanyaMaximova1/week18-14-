@@ -89,7 +89,7 @@ function directorsInformations() {
 }
 directorsInformations();
 
-//задание под ***
+//ЗАДАНИЕ ПОД ***
 function intersectionOne() {
     let new_arr1 = [];
     for (element_a of arr1) {
